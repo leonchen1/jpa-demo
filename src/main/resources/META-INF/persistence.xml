@@ -16,7 +16,7 @@
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="123456"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/jpa_demo"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/jpa_demo?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf-8"/>
 
             <!--
             配置JPA实现方配置信息
@@ -27,7 +27,7 @@
                     none：不建
             -->
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>
